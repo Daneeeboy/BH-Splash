@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "Gotham-Extra-Light";
+	src: url('http://cd.thebluehive.com/stage/bluehive2/splash/fonts/gotham_xlight.otf');
+}
+
+@font-face {
+	font-family: "Gotham-Book";
+	src: url('fonts/gotham_book.otf');	
+}
+
+@font-face {
+	font-family: "Gotham-Bold";
+	src: url('fonts/gotham_bold.otf');	
+}
+
+h1 {
+	font-family: "Gotham-Extra-Light";	
+}
+
+h2 {
+	font-family: "Gotham-Bold";	
+}
+
+a:link, a:visited {
+	color: #00405a;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+html{
+	font-size: 65%;
+	line-height: 1.5em;
+	font-family: "Gotham-Book",Helvetica,Verdana,Arial;
+	background:#fff;
+	color: #00405a;
+	width:100%;
+	height:100%;
+}
+
+body{
+	height:100%;
+	width:100%;
+	margin: 0px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#container {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	overflow-x: hidden;	
+}
+
+#wrapper {
+	display: block;
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	z-index: 10;
+}	
+
+#background_container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 0;	
+}
+
+#bg_left {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -232px;
+}
+
+#bg_right {
+	position: absolute;
+	display: block;
+	right: 0px;
+	top: 0px;	
+}
+
+#logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	position: relative;
+	display: block;
+}	
+
+#logo img {
+	max-width: 100%;
+}
+
+#slogan {
+	position: relative;
+	display: block;
+	margin-top: 85px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#slogan h1 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #8dd2cc;	
+	font-weight: normal;	
+}
+
+#regions {
+	display: block;	
+}
+
+.region {
+	display: block;	
+	border-top: 1px #8dd2cc solid;
+	padding-left: 30px;
+}
+
+.region:hover, .region:active, .region:hover .arrow, .region:active .arrow, .region:hover h2, .region:active h2 {
+	color: #fff;	
+}
+
+.asia:active, .asia:hover {
+	background-color: #f26349;
+	color: #fff;	
+}
+
+.asia h2, .asia .arrow {
+	color: #f26349;	
+}
+
+.europe:active, .europe:hover {
+	background-color: #00aeb5;
+	color: #fff;	
+}
+
+.europe h2, .europe .arrow {
+	color: #00aeb5;	
+}
+
+.latin h2, .latin .arrow {
+	color: #fbaf19;	
+}
+
+.latin:active, .latin:hover {
+	background-color: #fbaf19;
+	color: #fff;	
+}
+
+.region h2 {
+	font-size: 24px;
+	line-height: 24px;	
+	text-transform: uppercase;
+}
+
+.buttons {
+	display: block;	
+	margin-top: -10px;
+}
+
+.button {
+	display: inline-block;
+	width: 33px;
+	height: 39px;
+	text-align: center;
+	line-height: 72px;
+}
+
+.button img {
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+#social {
+	display: block;
+	text-align: center;
+	border-top: 1px #8dd2cc solid;
+	padding-top: 20px;
+}
+
+.social_icon {
+	margin-left: 10px;
+	margin-right: 10px;	
+	width: 25px;
+	display: inline-block;
+}
+
+@media only screen and (max-device-width: 640px) {
+	.not_mobile {
+		display: none;	
+	}
+}
+
+.address {
+	float: left;	
+}
+
+@media only screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+	#wrapper {
+		width: 100%;	
+	}
+	
+	#bg_left {
+		left: -474px; 
+		top: 100px;	
+	}
+	
+	#bg_right {
+		width: 375px;
+		height: 243px;
+		overflow-x: hidden;
+	}
+}
+
+@media only screen and (min-device-width: 640px) {
+	
+	.mobile {
+		display: none;	
+	}
+	
+	#bg_left {
+		left: -464px;
+		top: 60px;	
+	}
+	
+	#bg_right {
+		right: 0px;
+		top: 0px;	
+	}
+	
+	#logo {
+		margin-left: 40px;
+		margin-top: 00px;
+		padding-top: 30px;	
+	}
+	
+	#slogan {
+		margin-top: 300px;	
+		margin-left: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+	
+	#slogan h1 {
+		font-size: 50px;
+		line-height: 120px;	
+	}
+	
+	.region {
+		display: inline-block;
+		float: left;
+		width: 33.33%;	
+		padding: 40px;
+	}
+	
+	.region h2 {
+		font-size: 30px;
+		line-height: 30px;
+		height: 40px;	
+	}
+	
+	.arrow {
+		font-size: 24px;
+		font-weight: bold;	
+	}
+	
+	.enter {
+		color: #fff;
+		font-size: 18px;
+		font-family: "Gotham-Bold";	
+	}
+	
+	.social_icon {
+		margin-left: 10px;
+		margin-right: 10px;	
+		width: 25px;
+		display: inline-block;
+	}
+}
+
+@media on screen and (min-device-width: 1024px) {
+	#wrapper {
+		width: 960px;
+		margin: 0 auto;	
+	}
+	
+	#background_container {
+		width: 960px;
+		position: relative;
+		margin: 0 auto;
+		display: block;
+	}
+	
+	#bg_left {
+		position: absolute;
+		right: 900px;
+		top: 0px;	
+	}
+	
+	#bg_right {
+		position: absolute;
+		left: 450px;
+		to	
+	}
+	
+	#slogan {
+		margin-top: 160px;	
+	}
+	
+	#slogan h1 {
+		font-size: 70px;	
+		letter-spacing: -0.05em;
+		line-height: 70px;
+	}
+	
+	.region h2 {
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: -0.05em;
+		height: 80px;	
+	}
+	
+	.region {
+		padding: 20px;	
+	}
+}
