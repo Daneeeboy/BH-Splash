@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: "Gotham-Extra-Light";
-	src: url('http://cd.thebluehive.com/stage/bluehive2/splash/fonts/gotham_xlight.otf');
+	src: url('fonts/gotham_xlight.otf');
 }
 
 @font-face {
@@ -75,73 +75,6 @@ body{
 	overflow-x: hidden;	
 }
 
-#wrapper {
-	display: block;
-	width: 100%;
-	position: relative;
-	margin: 0px;
-	z-index: 10;
-}	
-
-#background_container {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	z-index: 0;	
-}
-
-#bg_left {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: -232px;
-}
-
-#bg_right {
-	position: absolute;
-	display: block;
-	right: 0px;
-	top: 0px;	
-}
-
-#logo {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 30px;
-	position: relative;
-	display: block;
-}	
-
-#logo img {
-	max-width: 100%;
-}
-
-#slogan {
-	position: relative;
-	display: block;
-	margin-top: 85px;
-	margin-left: 30px;
-	margin-bottom: 20px;
-}
-
-#slogan h1 {
-	font-size: 30px;
-	line-height: 30px;
-	color: #8dd2cc;	
-	font-weight: normal;	
-}
-
-#regions {
-	display: block;	
-}
-
-.region {
-	display: block;	
-	border-top: 1px #8dd2cc solid;
-	padding-left: 30px;
-}
 
 .region:hover, .region:active, .region:hover .arrow, .region:active .arrow, .region:hover h2, .region:active h2 {
 	color: #fff;	
@@ -172,12 +105,6 @@ body{
 .latin:active, .latin:hover {
 	background-color: #fbaf19;
 	color: #fff;	
-}
-
-.region h2 {
-	font-size: 24px;
-	line-height: 24px;	
-	text-transform: uppercase;
 }
 
 .buttons {
@@ -212,47 +139,119 @@ body{
 	display: inline-block;
 }
 
-@media only screen and (max-device-width: 640px) {
-	.not_mobile {
-		display: none;	
-	}
-}
 
 .address {
 	float: left;	
 }
 
-@media only screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+
+
+@media screen and (max-device-width: 640px) {
+	.not_mobile {
+		display: none;	
+	}
+	
+	#wrapper {
+		display: block;
+		width: 100%;
+		position: relative;
+		margin: 0px;
+		z-index: 10;
+	}	
+	
+	#bg_left {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -232px;
+	}
+	
+	#bg_right {
+		position: absolute;
+		display: block;
+		right: 0px;
+		top: 0px;	
+	}
+	
+	#logo {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 30px;
+		position: relative;
+		display: block;
+	}	
+	
+	#logo img {
+		max-width: 100%;
+	}
+	
+	#slogan {
+		position: relative;
+		display: block;
+		margin-top: 85px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	
+	#slogan h1 {
+		font-size: 30px;
+		line-height: 30px;
+		color: #8dd2cc;	
+		font-weight: normal;	
+	}
+	
+	#regions {
+		display: block;	
+	}
+	
+	.region {
+		display: block;	
+		border-top: 1px #8dd2cc solid;
+		padding-left: 30px;
+	}
+	
+	.region h2 {
+		font-size: 24px;
+		line-height: 24px;	
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+	.mobile {
+		display: none;	
+	}
+	
 	#wrapper {
 		width: 100%;	
+	}
+	
+	#background_container {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: 0;	
 	}
 	
 	#bg_left {
 		left: -474px; 
 		top: 100px;	
+		position: absolute;
 	}
 	
 	#bg_right {
+		position: absolute;
 		width: 375px;
 		height: 243px;
+		top: 0px;
+		right: 0px;
 		overflow-x: hidden;
 	}
-}
-
-@media only screen and (min-device-width: 640px) {
 	
 	.mobile {
 		display: none;	
-	}
-	
-	#bg_left {
-		left: -464px;
-		top: 60px;	
-	}
-	
-	#bg_right {
-		right: 0px;
-		top: 0px;	
 	}
 	
 	#logo {
@@ -265,12 +264,19 @@ body{
 		margin-top: 300px;	
 		margin-left: 0px;
 		padding: 0px;
+		position: relative;
+		display: block;
 		text-align: center;
 	}
 	
 	#slogan h1 {
 		font-size: 50px;
 		line-height: 120px;	
+	}
+	
+	#regions {
+		display: block;
+		border-top: 1px #8dd2cc solid;	
 	}
 	
 	.region {
@@ -305,10 +311,16 @@ body{
 	}
 }
 
-@media on screen and (min-device-width: 1024px) {
+@media screen and (min-device-width: 1024px) {
+	.mobile {
+		display: none;	
+	}
+	
 	#wrapper {
 		width: 960px;
 		margin: 0 auto;	
+		position: relative;
+		z-index: 10;
 	}
 	
 	#background_container {
@@ -327,11 +339,17 @@ body{
 	#bg_right {
 		position: absolute;
 		left: 450px;
-		to	
+		top: 0px;	
+	}
+	
+	#logo {
+		margin-left: 00px;
+		margin-top: 00px;
+		padding-top: 30px;	
 	}
 	
 	#slogan {
-		margin-top: 160px;	
+		margin-top: 200px;	
 	}
 	
 	#slogan h1 {
@@ -340,14 +358,63 @@ body{
 		line-height: 70px;
 	}
 	
-	.region h2 {
-		font-size: 50px;
-		line-height: 50px;
-		letter-spacing: -0.05em;
-		height: 80px;	
+	#regions {
+		display: block;
+		border-top: 1px #8dd2cc solid;	
 	}
 	
 	.region {
-		padding: 20px;	
+		display: inline-block;
+		float: left;
+		width: 33.33%;	
+		padding: 20px;
+		position: relative;
+		overflow: hidden;
 	}
+	
+	.region h2 {
+		font-size: 40px;
+		line-height: 40px;
+		height: 40px;	
+	}
+	
+	.arrow {
+		font-size: 24px;
+		font-weight: bold;	
+	}
+	
+	.enter {
+		color: #fff;
+		font-size: 18px;
+		font-family: "Gotham-Bold";	
+		display: inline-block;
+		position: absolute;
+		bottom: -100px;
+		left: 50px;
+		-webkit-transition: bottom 1s;
+		transition: bottom 1s;
+	}
+	
+	.region:hover {
+		cursor: pointer;	
+	}
+	
+	.region:hover .enter {
+		bottom: 41px;	
+	}
+	
+	.social_icon {
+		margin-left: 10px;
+		margin-right: 10px;	
+		width: 25px;
+		display: inline-block;
+	}
+	
+	.region h2 {
+		font-size: 60px;
+		line-height: 60px;
+		letter-spacing: -0.05em;
+		height: 80px;	
+	}
+
 }

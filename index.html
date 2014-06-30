@@ -5,6 +5,8 @@
 <title>Blue Hive</title>
 <meta name='viewport' content='width=device-width' />
 <link href="splash.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="splash.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
     
     <div id="regions" class="cf">
     
-    	<div class="region asia">
+    	<div class="region asia" data-destination="http://www.thebluehive.com">
         	<h2>Asia Pacific</h2>
             <div class="buttons mobile">
             	<div class="button">
@@ -52,18 +54,18 @@
               	</div>
             </div>
             
-            <div class="address not_mobile">
+            <div class="address not_mobile" data-destination="http://www.thebluehive.com">
             	<p>3511 The Center, 989 Changle Road<br />
                 Shanghai 200031 CHINA<br />
                 中国上海长乐路989号世纪商贸广场3511<br />
                 +86 21 24050088</p>
                 
-                <p><a href="#">nihao@thebluehive.com</a></p>
+                <p><a href="mailto:nihao@thebluehive.com">nihao@thebluehive.com</a></p>
                 <p class="arrow">&raquo; <span class="enter">ENTER</span></p>
             </div>
         </div>
         
-        <div class="region europe">
+        <div class="region europe" data-destination="http://www.thebluehive.com">
         	<h2>Europe</h2>
             <div class="buttons mobile">
             	<div class="button">
@@ -89,7 +91,7 @@
 
         </div>
     
-    	<div class="region latin">
+    	<div class="region latin" data-destination="http://www.thebluehive.com">
         	<h2>Latin America</h2>
             <div class="buttons mobile">
             	<div class="button">
@@ -117,12 +119,12 @@
     </div>
     
     <div id="social">
-    	<span class="mobile"><a href="#" class="social_icon"><img src="splash_images/facebook_mobile.png" /></a></span>
-       	<span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/facebook.png" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" /></a></span>
-        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/twitter.png" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" /></a></span>
-        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin.png" /></a></span>
+    	<span class="mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook_mobile.png" alt="Follow Us On Facebook" /></a></span>
+       	<span class="not_mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook.png" data-rollover="splash_images/facebook_on.png" class="rollover" alt="Follow Us On Facebook" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" alt="Follow Us On Twitter" /></a></span>
+        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/twitter.png" data-rollover="splash_images/twitter_on.png" class="rollover" alt="Follow Us On Twitter" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" alt="Follow Us On LinkedIn" /></a></span>
+        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin.png" data-rollover="splash_images/linkedin_on.png" class="rollover" alt="Follow Us On LinkedIn" /></a></span>
     </div>
     
 </div>
