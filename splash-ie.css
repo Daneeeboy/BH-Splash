@@ -14,7 +14,6 @@
 @font-face {
 	font-family: "Gotham-Bold";
 	src: url('fonts/gotham_bold.otf');	
-	font-weight: bold;
 }
 
 h1 {
@@ -65,6 +64,10 @@ body{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+img {
+	border: 0px;	
 }
 
 #container {
@@ -131,7 +134,6 @@ body{
 	text-align: center;
 	border-top: 1px #8dd2cc solid;
 	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 .social_icon {
@@ -146,178 +148,6 @@ body{
 	float: left;	
 }
 
-
-
-@media screen and (max-device-width: 640px) {
-	.not_mobile {
-		display: none;	
-	}
-	
-	#wrapper {
-		display: block;
-		width: 100%;
-		position: relative;
-		margin: 0px;
-		z-index: 10;
-	}	
-	
-	#bg_left {
-		display: block;
-		position: absolute;
-		top: 0px;
-		left: -232px;
-	}
-	
-	#bg_right {
-		position: absolute;
-		display: block;
-		right: 0px;
-		top: 0px;	
-	}
-	
-	#logo {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-left: 30px;
-		position: relative;
-		display: block;
-	}	
-	
-	#logo img {
-		max-width: 100%;
-	}
-	
-	#slogan {
-		position: relative;
-		display: block;
-		margin-top: 85px;
-		margin-left: 30px;
-		margin-bottom: 20px;
-	}
-	
-	#slogan h1 {
-		font-size: 30px;
-		line-height: 30px;
-		color: #8dd2cc;		
-	}
-	
-	#regions {
-		display: block;	
-	}
-	
-	.region {
-		display: block;	
-		border-top: 1px #8dd2cc solid;
-		padding-left: 30px;
-	}
-	
-	.region h2 {
-		font-size: 24px;
-		line-height: 24px;	
-		text-transform: uppercase;
-	}
-}
-
-@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
-	.mobile {
-		display: none;	
-	}
-	
-	#wrapper {
-		display: block;
-		width: 100%;
-		position: relative;
-		margin: 0px;
-		z-index: 10;
-	}
-	
-	#background_container {
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		bottom: 0px;
-		z-index: 0;	
-	}
-	
-	#bg_left {
-		left: -474px; 
-		top: 100px;	
-		position: absolute;
-	}
-	
-	#bg_right {
-		position: absolute;
-		width: 375px;
-		height: 243px;
-		top: 0px;
-		right: 0px;
-		overflow-x: hidden;
-	}
-	
-	.mobile {
-		display: none;	
-	}
-	
-	#logo {
-		margin-left: 40px;
-		margin-top: 00px;
-		padding-top: 30px;	
-	}
-	
-	#slogan {
-		margin-top: 300px;	
-		margin-left: 0px;
-		padding: 0px;
-		position: relative;
-		display: block;
-		text-align: center;
-	}
-	
-	#slogan h1 {
-		font-size: 40px;
-		font-weight: lighter;
-		line-height: 120px;	
-	}
-	
-	#regions {
-		display: block;
-		border-top: 1px #8dd2cc solid;	
-	}
-	
-	.region {
-		display: inline-block;
-		float: left;
-		width: 33.33%;	
-		padding: 40px;
-	}
-	
-	.region h2 {
-		font-size: 30px;
-		line-height: 30px;
-		height: 40px;	
-	}
-	
-	.arrow {
-		font-size: 24px;
-		font-weight: bold;	
-	}
-	
-	.enter {
-		color: #fff;
-		font-size: 18px;
-		font-family: "Gotham-Bold";	
-	}
-	
-	.social_icon {
-		margin-left: 10px;
-		margin-right: 10px;	
-		width: 25px;
-		display: inline-block;
-	}
-}
-
-@media screen and (min-device-width: 1024px) {
 	.mobile {
 		display: none;	
 	}
@@ -395,10 +225,10 @@ body{
 		font-family: "Gotham-Bold";	
 		display: inline-block;
 		position: absolute;
-		bottom: -50px;
+		bottom: -100px;
 		left: 50px;
-		-webkit-transition: bottom 0.5s;
-		transition: bottom 0.5s;
+		-webkit-transition: bottom 1s;
+		transition: bottom 1s;
 	}
 	
 	.region:hover {
@@ -422,5 +252,3 @@ body{
 		letter-spacing: -0.05em;
 		height: 80px;	
 	}
-
-}

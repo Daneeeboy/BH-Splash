@@ -4,9 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Blue Hive</title>
 <meta name='viewport' content='width=device-width' />
-<link href="splash.css" rel="stylesheet" type="text/css" />
+<link href="splash.css" rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px)" />
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="splash-ie.css" />
+<![endif]-->
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="splash.js"></script>
 </head>
 
 <body>
@@ -15,12 +17,12 @@
 
 <div id="background_container">
     <div id="bg_left">
-        <img src="splash_images/bg_left_mobile.png" class="mobile" />
+        <img src="splash_images/bg_left_mobile.png" data-retina="splash_images/bg_left_mobile@2x.png" class="mobile" />
         <img src="splash_images/bg_left.png" class="not_mobile" />
     </div>
     
     <div id="bg_right">
-        <img src="splash_images/bg_right_mobile.png" class="mobile" />
+        <img src="splash_images/bg_right_mobile.png" data-retina="splash_images/bg_right_mobile@2x.png" class="mobile" />
         <img src="splash_images/bg_right.png" class="not_mobile" />
     </div>
 </div>
@@ -30,7 +32,7 @@
 <div id="wrapper">
 	
     <div id="logo">
-    	<img src="splash_images/logo_mobile.png" class="mobile" />
+    	<img src="splash_images/logo_mobile.png" data-retina="splash_images/logo_mobile@2x.png" class="mobile" />
         <img src="splash_images/logo.png" class="not_mobile" />
     </div>
     
@@ -44,13 +46,13 @@
         	<h2>Asia Pacific</h2>
             <div class="buttons mobile">
             	<div class="button">
-                	<img src="splash_images/asia_location.png" alt="Location" />
+                	<a href="#"><img src="splash_images/asia_location.png" class="mobile ontouch" data-retina="splash_images/asia_location@2x.png" data-on="splash_images/asia_location_on.png" data-retina-on="splash_images/asia_location_on@2x.png" alt="Location" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/asia_phone.png" alt="Telephone" />
+                	<a href="#"><img src="splash_images/asia_phone.png" class="mobile ontouch" data-retina="splash_images/asia_phone@2x.png" data-on="splash_images/asia_phone_on.png" data-retina-on="splash_images/asia_phone_on@2x.png" alt="Telephone" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/asia_mail.png" alt="Email" />
+                	<a href="#"><img src="splash_images/asia_mail.png" class="mobile ontouch" data-retina="splash_images/asia_mail@2x.png" data-on="splash_images/asia_mail_on.png" data-retina-on="splash_images/asia_mail_on@2x.png" alt="Email" /></a>
               	</div>
             </div>
             
@@ -69,13 +71,13 @@
         	<h2>Europe</h2>
             <div class="buttons mobile">
             	<div class="button">
-                	<img src="splash_images/europe_location.png" alt="Location" />
+                	<a href="#"><img src="splash_images/europe_location.png" class="mobile ontouch" data-retina="splash_images/europe_location@2x.png" data-on="splash_images/europe_location_on.png" data-retina-on="splash_images/europe_location_on@2x.png" alt="Location" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/europe_phone.png" alt="Telephone" />
+                	<a href="#"><img src="splash_images/europe_phone.png" class="mobile ontouch" data-retina="splash_images/europe_phone@2x.png" data-on="splash_images/europe_phone_on.png" data-retina-on="splash_images/europe_phone_on@2x.png" alt="Telephone" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/europe_mail.png" alt="Email" />
+                	<a href="#"><img src="splash_images/europe_mail.png" class="mobile ontouch" data-retina="splash_images/europe_location@2x.png" data-on="splash_images/europe_mail_on.png" data-retina-on="splash_images/europe_mail_on@2x.png" alt="Email" /></a>
               	</div>
             </div>
             
@@ -95,13 +97,13 @@
         	<h2>Latin America</h2>
             <div class="buttons mobile">
             	<div class="button">
-                	<img src="splash_images/la_location.png" alt="Location" />
+                	<a href="#"><img src="splash_images/la_location.png" class="mobile ontouch" data-retina="splash_images/la_location@2x.png" data-on="splash_images/latin_location_on.png" data-retina-on="splash_images/latin_location_on@2x.png" alt="Location" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/la_phone.png" alt="Telephone" />
+                	<a href="#"><img src="splash_images/la_phone.png" class="mobile ontouch" data-retina="splash_images/la_phone@2x.png" data-on="splash_images/latin_phone_on.png" data-retina-on="splash_images/latin_phone_on@2x.png" alt="Telephone" /></a>
               	</div>
                 <div class="button">
-                	<img src="splash_images/la_mail.png" alt="Email" />
+                	<a href="#"><img src="splash_images/la_mail.png" class="mobile ontouch" data-retina="splash_images/la_mail@2x.png" data-on="splash_images/latin_mail_on.png" data-retina-on="splash_images/latin_mail_on@2x.png" alt="Email" /></a>
               	</div>
             </div>
             
@@ -119,16 +121,16 @@
     </div>
     
     <div id="social">
-    	<span class="mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook_mobile.png" alt="Follow Us On Facebook" /></a></span>
+    	<span class="mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook_mobile.png" class="mobile" data-retina="splash_images/facebook_mobile@2x.png" alt="Follow Us On Facebook" /></a></span>
        	<span class="not_mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook.png" data-rollover="splash_images/facebook_on.png" class="rollover" alt="Follow Us On Facebook" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" alt="Follow Us On Twitter" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" class="mobile" data-retina="splash_images/twitter_mobile@2x.png" alt="Follow Us On Twitter" /></a></span>
         <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/twitter.png" data-rollover="splash_images/twitter_on.png" class="rollover" alt="Follow Us On Twitter" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" alt="Follow Us On LinkedIn" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" class="mobile" data-retina="splash_images/linkedin_mobile@2x.png" alt="Follow Us On LinkedIn" /></a></span>
         <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin.png" data-rollover="splash_images/linkedin_on.png" class="rollover" alt="Follow Us On LinkedIn" /></a></span>
     </div>
     
 </div>
 
-<script type="text/javascript" src="retina.min.js"></script>
+<script type="text/javascript" src="splash.js"></script>
 </body>
 </html>
