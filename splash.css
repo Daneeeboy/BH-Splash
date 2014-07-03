@@ -31,6 +31,10 @@ a:link, a:visited {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;	
+}
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -76,12 +80,7 @@ body{
 	overflow-x: hidden;	
 }
 
-
-.region:hover, .region:active, .region:hover .arrow, .region:active .arrow, .region:hover h2, .region:active h2 {
-	color: #fff;	
-}
-
-.asia:active, .asia:hover {
+.region_title:hover, .region_footer:hover .asia  {
 	background-color: #f26349;
 	color: #fff;	
 }
@@ -193,6 +192,7 @@ body{
 		margin-top: 85px;
 		margin-left: 30px;
 		margin-bottom: 20px;
+		text-align: center;
 	}
 	
 	#slogan h1 {
@@ -278,6 +278,7 @@ body{
 		font-size: 40px;
 		font-weight: lighter;
 		line-height: 120px;	
+		color: #8dd2cc;
 	}
 	
 	#regions {
@@ -349,23 +350,27 @@ body{
 	}
 	
 	#logo {
-		margin-left: 00px;
+		margin-left: 20px;
 		margin-top: 00px;
 		padding-top: 30px;	
 	}
 	
 	#slogan {
 		margin-top: 200px;	
+		padding-left: 20px;
 	}
 	
 	#slogan h1 {
 		font-size: 70px;	
 		letter-spacing: -0.05em;
 		line-height: 70px;
+		color: #8dd2cc;
 	}
 	
 	#regions {
 		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		border-top: 1px #8dd2cc solid;	
 	}
 	
@@ -373,15 +378,36 @@ body{
 		display: inline-block;
 		float: left;
 		width: 33.33%;	
-		padding: 20px;
 		position: relative;
 		overflow: hidden;
 	}
 	
+	.region_title {
+		display: inline-block;	
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.address {
+		display: inline-block;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;	
+	}
+	
+	.region_footer {
+		display: inline-block;
+		width: 100%;
+		float: left;
+		padding-left: 20px;
+		padidng-right: 20px;	
+	}
+	
 	.region h2 {
-		font-size: 40px;
+		font-size: 54px;
 		line-height: 40px;
-		height: 40px;	
+		text-transform: uppercase;
 	}
 	
 	.arrow {
@@ -389,24 +415,32 @@ body{
 		font-weight: bold;	
 	}
 	
-	.enter {
+	.enter_container {
 		color: #fff;
 		font-size: 18px;
 		font-family: "Gotham-Bold";	
 		display: inline-block;
 		position: absolute;
-		bottom: -50px;
-		left: 50px;
-		-webkit-transition: bottom 0.5s;
-		transition: bottom 0.5s;
+		bottom: 21px;
+		left: 40px;
+		width: 100px;
+		overflow: hidden;
+		text-align: left;
 	}
 	
-	.region:hover {
-		cursor: pointer;	
+	.enter {
+		position: absolute;
+		left: -100px;
+		-webkit-transition: left 0.5s;
+		transition: left 0.5s;
 	}
-	
+		
 	.region:hover .enter {
-		bottom: 41px;	
+		left: 0px;	
+	}
+
+	.region:hover a:link, .region:hover a:visited, .region:hover a:hover {
+		color: #fff;	
 	}
 	
 	.social_icon {
