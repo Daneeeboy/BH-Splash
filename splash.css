@@ -80,16 +80,15 @@ body{
 	overflow-x: hidden;	
 }
 
-.region_title:hover, .region_footer:hover .asia  {
-	background-color: #f26349;
-	color: #fff;	
+.asia.on {
+	background-color: #f26349;	
 }
 
 .asia h2, .asia .arrow {
 	color: #f26349;	
 }
 
-.europe:active, .europe:hover {
+.europe.on {
 	background-color: #00aeb5;
 	color: #fff;	
 }
@@ -102,7 +101,7 @@ body{
 	color: #fbaf19;	
 }
 
-.latin:active, .latin:hover {
+.latin.on {
 	background-color: #fbaf19;
 	color: #fff;	
 }
@@ -140,14 +139,12 @@ body{
 	display: inline-block;
 }
 
-
-.address {
-	float: left;	
+.region:hover {
+	cursor: pointer;	
 }
 
 
-
-@media screen and (max-device-width: 640px) {
+@media screen and (max-width: 640px) {
 	.not_mobile {
 		display: none;	
 	}
@@ -206,7 +203,9 @@ body{
 	}
 	
 	.region {
-		display: block;	
+		display: inline-block;
+		width: 100%;
+		position: relative;	
 		border-top: 1px #8dd2cc solid;
 		padding-left: 30px;
 	}
@@ -216,9 +215,14 @@ body{
 		line-height: 24px;	
 		text-transform: uppercase;
 	}
+	
+	.address {
+		display: block;	
+		
+	}
 }
 
-@media screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+@media screen and (min-width: 640px) and (max-width: 1024px) {
 	.mobile {
 		display: none;	
 	}
@@ -255,10 +259,6 @@ body{
 		overflow-x: hidden;
 	}
 	
-	.mobile {
-		display: none;	
-	}
-	
 	#logo {
 		margin-left: 40px;
 		margin-top: 00px;
@@ -266,7 +266,7 @@ body{
 	}
 	
 	#slogan {
-		margin-top: 300px;	
+		margin-top: 250px;	
 		margin-left: 0px;
 		padding: 0px;
 		position: relative;
@@ -275,36 +275,78 @@ body{
 	}
 	
 	#slogan h1 {
-		font-size: 40px;
+		font-size: 50px;
 		font-weight: lighter;
-		line-height: 120px;	
+		line-height: 50px;	
 		color: #8dd2cc;
 	}
 	
 	#regions {
 		display: block;
-		border-top: 1px #8dd2cc solid;	
+		border-top: 1px #8dd2cc solid;
+		padding-top: 20px;
+		padding-bottom: 20px;	
 	}
 	
 	.region {
 		display: inline-block;
 		float: left;
-		width: 33.33%;	
-		padding: 40px;
+		width: 30%;
+		margin-left: 2.5%;	
+		padding: 20px;
+		color: #fff;
+	}
+	
+	.region a:link, .region a:visited {
+		color: #fff;	
+	}
+	
+	.asia {
+		background-color: #f26349;
+	}
+	
+	.europe {
+		background-color: #00aeb5;
+	}	
+	
+	.latin {
+		background-color: #fbaf19;	
 	}
 	
 	.region h2 {
 		font-size: 30px;
 		line-height: 30px;
 		height: 40px;	
+		color: #fff;
+	}
+	
+	
+	.address {
+		float: left;	
+		height: 150px;
 	}
 	
 	.arrow {
 		font-size: 24px;
 		font-weight: bold;	
+		color: #fff !important;
 	}
 	
+	.region_footer {
+		display: inline-block;
+		width: 100%;	
+		position: relative;
+	}
+	
+	.enter_container {
+		position: absolute;
+		display: inline-block;
+		left: 20px;
+		bottom: 20px;	
+	}
+		
 	.enter {
+		display: inline;
 		color: #fff;
 		font-size: 18px;
 		font-family: "Gotham-Bold";	
@@ -318,13 +360,13 @@ body{
 	}
 }
 
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	.mobile {
 		display: none;	
 	}
 	
 	#wrapper {
-		width: 960px;
+		max-width: 960px;
 		margin: 0 auto;	
 		position: relative;
 		z-index: 10;
@@ -404,6 +446,12 @@ body{
 		padidng-right: 20px;	
 	}
 	
+	
+	.address {
+		float: left;	
+		height: 150px;
+	}
+	
 	.region h2 {
 		font-size: 54px;
 		line-height: 40px;
@@ -412,7 +460,11 @@ body{
 	
 	.arrow {
 		font-size: 24px;
-		font-weight: bold;	
+		font-weight: bold;
+		display: block;
+		left: 0px;
+		position: relative;
+		width: 100%;	
 	}
 	
 	.enter_container {
@@ -435,12 +487,8 @@ body{
 		transition: left 0.5s;
 	}
 		
-	.region:hover .enter {
+	.on .enter {
 		left: 0px;	
-	}
-
-	.region:hover a:link, .region:hover a:visited, .region:hover a:hover {
-		color: #fff;	
 	}
 	
 	.social_icon {
@@ -457,4 +505,8 @@ body{
 		height: 80px;	
 	}
 
+}
+
+.on, .on .arrow, .on h2, .on a:link, .on a:visited, .on a:hover {
+	color: #fff;	
 }

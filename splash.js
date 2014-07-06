@@ -25,7 +25,7 @@ $(document).ready(function() {
 		});
 	}
 	
-	/*$(".region").on("click touchstart", function(event) {
+	$(".region").on("click touchstart", function(event) {
 		event.preventDefault();
 		var target = $(event.target);
 		if(target.is("a")) {;
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		} else {
 			window.location.href = $(this).attr("data-destination");
 		}
-	});*/
+	});
 	
 	$(".rollover").hover(function(){
 		img_src = $(this).attr('src'); 
@@ -66,6 +66,21 @@ $(document).ready(function() {
 		cacheImage.src = $(this).attr('data-rollover');
 		cache.push(cacheImage);
 	});
+	
+	function regionSelect(element) {
+		element.addClass("on");
+	}
+	
+	function regionDeselect(element) {
+		element.removeClass("on");	
+	}
+	
+	$(".region").hover(function() {
+		regionSelect($(this));		
+	}, function() {
+		regionDeselect($(this));	
+	});
+	
 	
 
 });

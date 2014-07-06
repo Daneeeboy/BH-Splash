@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.not_mobile {
+		display: none;	
+	}
+	
+	#wrapper {
+		display: block;
+		width: 100%;
+		position: relative;
+		margin: 0px;
+		z-index: 10;
+	}	
+	
+	#bg_left {
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: -232px;
+	}
+	
+	#bg_right {
+		position: absolute;
+		display: block;
+		right: 0px;
+		top: 0px;	
+	}
+	
+	#logo {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 30px;
+		position: relative;
+		display: block;
+	}	
+	
+	#logo img {
+		max-width: 100%;
+	}
+	
+	#slogan {
+		position: relative;
+		display: block;
+		margin-top: 85px;
+		margin-left: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	
+	#slogan h1 {
+		font-size: 30px;
+		line-height: 30px;
+		color: #8dd2cc;		
+	}
+	
+	#regions {
+		display: block;	
+	}
+	
+	.region {
+		display: block;	
+		border-top: 1px #8dd2cc solid;
+		padding-left: 30px;
+	}
+	
+	.region h2 {
+		font-size: 24px;
+		line-height: 24px;	
+		text-transform: uppercase;
+	}
