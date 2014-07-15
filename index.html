@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="splash-ie.css" />
 <![endif]-->
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="response.min.js"></script>
 </head>
 
 <body>
@@ -19,12 +18,12 @@
 <div id="background_container">
     <div id="bg_left">
         <img src="splash_images/bg_left_mobile.png" data-retina="splash_images/bg_left_mobile@2x.png" class="mobile" />
-        <img src="splash_images/bg_left.png" class="not_mobile" />
+        <img src="splash_images/bg_left.png" data-retina="splash_images/bg_left@2x.png" class="not_mobile" />
     </div>
     
     <div id="bg_right">
         <img src="splash_images/bg_right_mobile.png" data-retina="splash_images/bg_right_mobile@2x.png" class="mobile" />
-        <img src="splash_images/bg_right.png" class="not_mobile" />
+        <img src="splash_images/bg_right.png" data-retina="splash_images/bg_right@2x.png" class="not_mobile" />
     </div>
 </div>
 
@@ -34,7 +33,7 @@
 	
     <div id="logo">
     	<img src="splash_images/logo_mobile.png" data-retina="splash_images/logo_mobile@2x.png" class="mobile" />
-        <img src="splash_images/logo.png" class="not_mobile" />
+        <img src="splash_images/logo.png" data-retina="splash_images/logo@2x.png" class="not_mobile" />
     </div>
     
     <div id="slogan">
@@ -57,8 +56,13 @@
                 +55 11 4174 4327</p>
                 
                 <p><a href="#">hello@thebluehive.com</a></p>
+            </div>
+            
+             <div class="region_footer">
+                    <p class="arrow">&raquo; <div class="enter_container"><span class="enter">ENTER</span>&nbsp;</div></p>
+                </div>
                 
-                 <div class="buttons mobile">
+                <div class="buttons mobile">
                     <div class="button">
                         <a href="#"><img src="splash_images/la_location.png" class="mobile ontouch" data-retina="splash_images/la_location@2x.png" data-on="splash_images/latin_location_on.png" data-retina-on="splash_images/latin_location_on@2x.png" alt="Location" /></a>
                     </div>
@@ -68,11 +72,6 @@
                     <div class="button">
                         <a href="#"><img src="splash_images/la_mail.png" class="mobile ontouch" data-retina="splash_images/la_mail@2x.png" data-on="splash_images/latin_mail_on.png" data-retina-on="splash_images/latin_mail_on@2x.png" alt="Email" /></a>
                     </div>
-                </div>
-            </div>
-            
-             <div class="region_footer">
-                    <p class="arrow">&raquo; <div class="enter_container"><span class="enter">ENTER</span>&nbsp;</div></p>
                 </div>
 
         </div>
@@ -90,6 +89,18 @@
                 +44 20 7674 8600</p>
                 
                 <p><a href="#">hello@thebluehive.com</a></p>
+            </div>
+            
+            <div class="buttons mobile">
+            	<div class="button">
+                	<a href="#"><img src="splash_images/europe_location.png" class="mobile ontouch" data-retina="splash_images/europe_location@2x.png" data-on="splash_images/europe_location_on.png" data-retina-on="splash_images/europe_location_on@2x.png" alt="Location" /></a>
+              	</div>
+                <div class="button">
+                	<a href="#"><img src="splash_images/europe_phone.png" class="mobile ontouch" data-retina="splash_images/europe_phone@2x.png" data-on="splash_images/europe_phone_on.png" data-retina-on="splash_images/europe_phone_on@2x.png" alt="Telephone" /></a>
+              	</div>
+                <div class="button">
+                	<a href="#"><img src="splash_images/europe_mail.png" class="mobile ontouch" data-retina="splash_images/europe_mail@2x.png" data-on="splash_images/europe_mail_on.png" data-retina-on="splash_images/europe_mail_on@2x.png" alt="Email" /></a>
+              	</div>
             </div>
                	
             <div class="region_footer">
@@ -136,12 +147,12 @@
     </div>
     
     <div id="social">
-    	<span class="mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook_mobile.png" class="mobile" data-retina="splash_images/facebook_mobile@2x.png" alt="Follow Us On Facebook" /></a></span>
-       	<span class="not_mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook.png" data-rollover="splash_images/facebook_on.png" class="rollover" alt="Follow Us On Facebook" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" class="mobile" data-retina="splash_images/twitter_mobile@2x.png" alt="Follow Us On Twitter" /></a></span>
-        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/twitter.png" data-rollover="splash_images/twitter_on.png" class="rollover" alt="Follow Us On Twitter" /></a></span>
-        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" class="mobile" data-retina="splash_images/linkedin_mobile@2x.png" alt="Follow Us On LinkedIn" /></a></span>
-        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin.png" data-rollover="splash_images/linkedin_on.png" class="rollover" alt="Follow Us On LinkedIn" /></a></span>
+    	<span class="mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook_mobile.png" class="mobile rollover" data-retina="splash_images/facebook_mobile@2x.png" data-rollover="splash_images/facebook_mobile_on.png" data-retina-rollover="splash_images/facebook_mobile_on@2x.png" alt="Follow Us On Facebook" /></a></span>
+       	<span class="not_mobile"><a href="http://www.facebook.com" class="social_icon"><img src="splash_images/facebook.png" data-rollover="splash_images/facebook_on.png" data-retina="splash_images/facebook@2x.png" data-retina-rollover="splash_images/facebook_on@2x.png" class="rollover" alt="Follow Us On Facebook" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/twitter_mobile.png" class="mobile rollover" data-retina="splash_images/twitter_mobile@2x.png" data-rollover="splash_images/twitter_mobile_on.png" data-retina-rollover="splash_images/twitter_mobile_on@2x.png" alt="Follow Us On Twitter" /></a></span>
+        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/twitter.png" data-rollover="splash_images/twitter_on.png" data-retina="splash_images/twitter@2x.png" data-retina-rollover="splash_images/twitter_on@2x.png" class="rollover" alt="Follow Us On Twitter" /></a></span>
+        <span class="mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin_mobile.png" class="mobile rollover" data-retina="splash_images/linkedin_mobile@2x.png" data-rollover="splash_images/linkedin_mobile_on.png" data-retina-rollover="splash_images/linkedin_mobile_on@2x.png" alt="Follow Us On LinkedIn" /></a></span>
+        <span class="not_mobile"><a href="#" class="social_icon"><img src="splash_images/linkedin.png" data-rollover="splash_images/linkedin_on.png" data-retina="splash_images/linkedin@2x.png" data-retina-rollover="splash_images/linkedin_on@2x.png" class="rollover" alt="Follow Us On LinkedIn" /></a></span>
     </div>
     
 </div>
